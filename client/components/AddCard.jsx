@@ -18,8 +18,9 @@ class AddCard extends React.Component {
 }
 
   handleChange = e => {
+    const { name , value } = e.target
     this.setState({
-      [e.target.name]: e.target.value
+      [name]: value
     })
   }
 
